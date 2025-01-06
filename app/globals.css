@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ffffff;
+  --primary: #532f82;
+  --text-purple: #603f8b;
+  --text-gray: #686868;
+}
+
+.padding {
+  @apply lg:px-16 md:px-8 px-4;
 }
