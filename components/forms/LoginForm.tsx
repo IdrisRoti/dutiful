@@ -9,16 +9,14 @@ const LoginForm = () => {
         <div className="flex flex-col gap-6">
             <CustomInput name="email" label="Email" />
             <CustomInput name="password" label="Password" type="password" />
-            <Link className='text-borderPurple ml-auto' href="#">Forgot password</Link>
+            <Link className='text-borderPurple ml-auto' href="/forgot-password">Forgot password</Link>
             <div className="hidden md:block mt-5">
               <CustomButton className='shadow-xl' size="lg">Log in</CustomButton>
             </div>
             <div className="md:hidden mt-5">
               <CustomButton className='shadow-xl'>Log in</CustomButton>
             </div>
-            <div className="">
-                <p className='text-[#A3B1BF] text-center'>Don&apos;t have an account? <Link className='text-textPurple' href="/signup">Sign Up</Link></p>
-            </div>
+            <p className='text-[#A3B1BF] text-center'>Don&apos;t have an account? <Link className='text-textPurple' href="/signup">Sign Up</Link></p>
         </div>
     </form>
   )
