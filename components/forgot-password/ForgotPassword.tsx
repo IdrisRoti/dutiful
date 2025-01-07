@@ -19,7 +19,7 @@ const ForgotPassword = () => {
             <BsArrowLeft />
         </button>
         <h1 className={`${averiaSerifLibre.className} text-4xl mb-4 mt-8 md:mt-12`}>Forgot password</h1>
-        <h2 className='text-textGray mb-3'>Enter your email and well send you a mail on how to reset your 
+        <h2 className='text-textGray mb-3'>Enter your email and we&apos;ll send you a mail on how to reset your 
         password.</h2>
         <ForgotPasswordForm />
     </div>
