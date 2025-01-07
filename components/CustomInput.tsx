@@ -21,8 +21,8 @@ const CustomInput = ({ name, label, icon, type="text" }: ICustomInput) => {
     <div>
         <label htmlFor={name} className="text-textPurple font-medium md:text-xl mb-2">{label}</label>
         <div className="flex relative h-[3.5rem] w-full bg-[#F8FAFD] rounded-md overflow-hidden">
-            <input type={inputType} id={name} className="w-full h-full px-3 rounded-md bg-transparent outline-none border-[2px] border-[#E7EAF1] focus:border-primary transition-all" />
-            {icon && <Icon className="text-[#A16AE8] size-6 absolute z-10 right-3 top-1/2 -translate-y-1/2" />}
+            <input type={inputType} id={name} className="w-full h-full px-3 rounded-md bg-transparent outline-none border-[2px] border-[#E7EAF1] focus:border-borderPurple transition-all" />
+            {icon && <Icon className="text-borderPurple size-6 absolute z-10 right-3 top-1/2 -translate-y-1/2" />}
             {type === "password" && !icon && (
               <div className="">
                 {

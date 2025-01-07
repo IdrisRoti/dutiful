@@ -32,7 +32,7 @@ const UserType = () => {
                 return (
                     <button 
                         key={label} 
-                        className={twMerge("relative py-5 md:py-[1.875rem] px-3 md:px-5 rounded-xl border flex items-center gap-2 md:gap-6 justify-center", isSelected ? "border-primary" : "border-[#EEEEFF] text-[#B1BDCA]")}
+                        className={twMerge("relative py-5 md:py-[1.875rem] px-3 md:px-5 rounded-xl border flex items-center gap-2 md:gap-6 justify-center", isSelected ? "border-primary" : "border-[#EEEEFF] hover:border-primary text-[#B1BDCA]")}
                         onClick={() => setSelectedType(value)} 
                     >
                             <Icon className="size-5 md:size-6" />
