@@ -1,4 +1,4 @@
-import EmailSent from '@/components/password-sent/EmailSent'
+import EmailSent from '@/components/email-sent/EmailSent'
 
 const EmailSentPage = () => {
   return (

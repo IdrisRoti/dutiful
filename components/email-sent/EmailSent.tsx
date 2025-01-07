@@ -7,7 +7,8 @@ import CustomButton from "../CustomButton"
 import { IoMdCheckmark } from "react-icons/io"
 
 const EmailSent = () => {
-  const router = useRouter()
+  const router = useRouter();
+  
   return (
     <div className='pt-[5rem] md:pt-[7rem] pb-[5rem] w-full max-w-[30.375rem] mx-auto px-4 md:px-0'>
         <div className="w-full flex flex-col items-center">
