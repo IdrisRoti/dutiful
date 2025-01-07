@@ -5,7 +5,7 @@ import Terms from '../signup/Terms';
 
 const SignUpForm = () => {
   return (
-    <form className='mt-16'>
+    <form className='mt-12'>
         <div className="flex flex-col gap-6">
             <CustomInput name="fullname" label="Full name" />
             <CustomInput name="email" label="Email" />
@@ -14,10 +14,10 @@ const SignUpForm = () => {
             <CustomInput name="confirmpassword" label="Re-enter password" type='password' />
             <Terms />
             <div className="hidden md:block">
-              <CustomButton size="lg">Sign up</CustomButton>
+              <CustomButton className='shadow-xl' size="lg">Sign up</CustomButton>
             </div>
             <div className="md:hidden">
-              <CustomButton>Sign up</CustomButton>
+              <CustomButton className='shadow-xl'>Sign up</CustomButton>
             </div>
         </div>
     </form>
