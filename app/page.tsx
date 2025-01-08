@@ -1,3 +1,4 @@
+import Appointments from "@/components/landing-page/appointments/Appointments";
 import Benefits from "@/components/landing-page/benefits/Benefits";
 import CollectReviews from "@/components/landing-page/collect-reviews/CollectReviews";
 import Hero from "@/components/landing-page/hero/Hero";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <CollectReviews />
       <Benefits />
+      <Appointments />
    </div>
   );
 }
