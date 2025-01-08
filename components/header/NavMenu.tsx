@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { CiSearch } from "react-icons/ci"
 
-const navlinks = [
+export const navlinks = [
     {
         id: 1,
         label: "Business Directory",
