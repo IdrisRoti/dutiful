@@ -13,7 +13,7 @@ const averiaSerifLibre = Averia_Serif_Libre({
 })
 
 const inter = Inter({
-  weight: ["400", "500"], 
+  weight: ["400", "500", "700"], 
   subsets: ["latin"],
   variable: "--font-inter"
 })
