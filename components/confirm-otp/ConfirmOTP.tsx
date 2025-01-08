@@ -63,7 +63,7 @@ const ConfirmOTP = () => {
         transition={{ ease: "easeInOut", duration: .5 }} 
         className='pt-[5rem] md:pt-[7rem] pb-[5rem] w-full max-w-[30.375rem] mx-auto px-4 md:px-0'>
         <form onSubmit={handleSubmit} className="pt-20">
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex items-center justify-center gap-3 md:gap-5">
                 {
                     code.map((digit, index) => (
                         <input 
@@ -72,7 +72,7 @@ const ConfirmOTP = () => {
                             onChange={(e) => handleChange(index, e.target.value)}
                             onKeyDown={(e) => handleKeyDown(index, e)}
                             maxLength={4} 
-                            className="w-[75px] aspect-square bg-[#F3F3F3] border-[2px] border-[#B6B6E5] rounded-lg outline-none focus:border-primary text-5xl text-center"
+                            className="w-[50px] md:w-[75px] aspect-square bg-[#F3F3F3] border-[2px] border-[#B6B6E5] rounded-lg outline-none focus:border-primary text-3xl md:text-5xl text-center"
                             aria-label={`OTP digit ${index + 1}`}
                             key={index} 
                         />
