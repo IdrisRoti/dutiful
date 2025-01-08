@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import { CiSearch } from "react-icons/ci"
 
 const navlinks = [
@@ -15,7 +16,7 @@ const navlinks = [
     {
         id: 3,
         label: "Pricing",
-        href: "#"
+        href: "/pricing"
     },
     {
         id: 4,

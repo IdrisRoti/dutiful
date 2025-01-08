@@ -13,7 +13,7 @@ const CustomButton = ({variant = "solid", children, size ="sm", className}: TCus
         className={twMerge(
             "md:text-lg border-[1.5px] px-14 border-textPurple font-medium transition w-full",
             variant === "outlined" ? "text-textPurple hover:bg-primary hover:text-white" : "text-white bg-primary hover:opacity-70",
-            size === "sm" ? "h-[3.625rem] rounded-md" : "h-[4.875rem] rounded-lg",
+            size === "sm" ? "h-[3.625rem] rounded-md" : "h-[4.375rem] rounded-lg",
             className
             )}>
         {children}

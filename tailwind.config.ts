@@ -14,6 +14,7 @@ export default {
         lightPurple: "var(--light-purple)",
         borderPurple: "var(--border-purple)",
         textGray: "var(--text-gray)",
+        textHeading: "var(--text-heading)",
       },
     },
   },
