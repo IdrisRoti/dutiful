@@ -1,14 +1,15 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
-import CustomInput from '../CustomInput'
-import CustomButton from '../CustomButton'
+import CustomInput from '../CustomInput';
+import CustomButton from '../CustomButton';
 
 const LoginForm = () => {
+
   return (
     <form className='mt-12'>
         <div className="flex flex-col gap-6">
-            <CustomInput name="email" label="Email" />
-            <CustomInput name="password" label="Password" type="password" />
+            <CustomInput type="email" required name="email" label="Email" />
+            <CustomInput required name="password" label="Password" type="password" />
             <Link className='text-borderPurple ml-auto' href="/forgot-password">Forgot password</Link>
             <div className="hidden md:block mt-5">
               <CustomButton className='shadow-xl' size="lg">Log in</CustomButton>

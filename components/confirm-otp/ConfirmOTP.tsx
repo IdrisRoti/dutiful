@@ -39,19 +39,21 @@ const ConfirmOTP = () => {
             }
         }
     }
+
+
     const handleKeyDown = (index: number, event: KeyboardEvent<HTMLInputElement>) => {
         if(event.key === "Backspace" && !code[index] && index > 0){
             inputRefs.current[index - 1]?.focus();
         }
     }
 
-    const handleSubmit = (e?: FormEvent) => {
-        if(e) e.preventDefault()
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
 
-        console.log("Submitted", code.length)
+        console.log("OTP", code.join(""));
     }
 
-    const allInputIsFilled = code.every((digit) => digit !== "")
+    const allInputIsFilled = code.every((digit) => digit !== "");
 
   return (
     <div className='pt-[5rem] md:pt-[7rem] pb-[5rem] w-full max-w-[30.375rem] mx-auto px-4 md:px-0'>

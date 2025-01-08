@@ -11,7 +11,7 @@ const ForgotPasswordForm = () => {
   return (
     <form className='mt-12'>
         <div className="flex flex-col gap-6">
-            <CustomInput name="email" label='Email' icon={CgMail} />
+            <CustomInput required type='email' name="email" label='Email' icon={CgMail} />
             <div className="hidden md:block mt-5">
               <CustomButton className='shadow-xl' size="lg">Send email</CustomButton>
             </div>

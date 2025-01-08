@@ -7,11 +7,11 @@ const SignUpForm = () => {
   return (
     <form className='mt-12'>
         <div className="flex flex-col gap-6">
-            <CustomInput name="fullname" label="Full name" />
-            <CustomInput name="email" label="Email" />
-            <CustomInput name="phone" label="Phone number" />
-            <CustomInput name="password" label="Password" type='password' />
-            <CustomInput name="confirmpassword" label="Re-enter password" type='password' />
+            <CustomInput required name="fullname" label="Full name" />
+            <CustomInput required name="email" label="Email" />
+            <CustomInput required name="phone" label="Phone number" />
+            <CustomInput required name="password" label="Password" type='password' />
+            <CustomInput required name="confirmpassword" label="Re-enter password" type='password' />
             <Terms />
             <div className="hidden md:block">
               <CustomButton className='shadow-xl' size="lg">Sign up</CustomButton>

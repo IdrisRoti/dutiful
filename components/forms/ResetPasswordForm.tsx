@@ -7,8 +7,8 @@ const ResetPasswordForm = () => {
   return (
     <form className='mt-12'>
         <div className="flex flex-col gap-6">
-            <CustomInput name="password" label="Enter new password" type='password' />
-            <CustomInput name="password" label="Re-enter new password" type="password" />
+            <CustomInput required name="password" label="Enter new password" type='password' />
+            <CustomInput required name="confirmPassword" label="Re-enter new password" type="password" />
             <div className="hidden md:block mt-5">
               <CustomButton className='shadow-xl' size="lg">Reset password</CustomButton>
             </div>
@@ -21,4 +21,4 @@ const ResetPasswordForm = () => {
   )
 }
 
-export default ResetPasswordForm
+export default ResetPasswordForm;
