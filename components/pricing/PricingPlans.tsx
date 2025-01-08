@@ -14,9 +14,9 @@ const PricingPlans = () => {
                         <>
                             {
                                 price === null ? (
-                                    <h4 className="font-semibold text-3xl lg:text-5xl mb-5">Free</h4>
+                                    <h4 className="font-semibold text-3xl lg:text-5xl mb-5 font-averia">Free</h4>
                                 ) :  (
-                                    <div className="flex mb-5">
+                                    <div className="flex mb-5 font-averia">
                                         <span className="uppercase font-semibold">NGN</span>
                                         <div className="flex items-end">
                                             <h4 className="font-semibold text-3xl lg:text-5xl">{price}</h4>

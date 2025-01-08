@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Averia_Serif_Libre, Inter } from "next/font/google";
 
 import "./globals.css";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
-const inter = Inter({weight: ["400", "500"], subsets: ["latin"]})
+const averiaSerifLibre = Averia_Serif_Libre({
+  weight: ["700"], 
+  subsets: ["latin"],
+  variable: "--font-averia"
+})
+
+const inter = Inter({
+  weight: ["400", "500"], 
+  subsets: ["latin"],
+  variable: "--font-inter"
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased max-w-[90rem] mx-auto`}
+        className={`${averiaSerifLibre.className} ${inter.className} antialiased max-w-[90rem] mx-auto`}
       >
         <Header />
-        <main>
+        <main className="font-inter">
           {children}
         </main>
         <Footer />
