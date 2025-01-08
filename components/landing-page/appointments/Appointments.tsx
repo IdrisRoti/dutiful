@@ -12,7 +12,7 @@ const Appointments = () => {
                     className="object-cover"
                 />
             </div>
-            <div className="w-full mx-auto flex flex-col pt-16 gap-4 text-center lg:text-start -order-1 lg:order-1">
+            <div className="w-full mx-auto flex flex-col lg:pt-16 gap-4 text-center lg:text-start -order-1 lg:order-1">
                 <h1 className='text-4xl font-semibold font-averia text-[#230B34]'>Accept and sell appointments</h1>
                 <p className='md:text-xl text-[#383838]'>Let customers book their own appointment or consultation. Start accepting payments for appointments through your booking page. </p>
             </div>
