@@ -4,14 +4,16 @@ type TCustomButton = {
     variant?: "outlined" | "solid",
     children: React.ReactNode;
     size?: "sm" | "lg";
-    className?: string
+    className?: string;
+    disabled?: boolean;
 }
 
-const CustomButton = ({variant = "solid", children, size ="sm", className}: TCustomButton) => {
+const CustomButton = ({variant = "solid", children, size ="sm", className, disabled}: TCustomButton) => {
   return (
     <button 
+        disabled={disabled}
         className={twMerge(
-            "md:text-lg border-[1.5px] px-14 border-textPurple font-medium transition w-full",
+            "md:text-lg border-[1.5px] px-14 border-textPurple font-medium transition w-full disabled:opacity-50 disabled:pointer-events-none",
             variant === "outlined" ? "text-textPurple hover:bg-primary hover:text-white" : "text-white bg-primary hover:opacity-70",
             size === "sm" ? "h-[3.625rem] rounded-md" : "h-[4.375rem] rounded-lg",
             className
