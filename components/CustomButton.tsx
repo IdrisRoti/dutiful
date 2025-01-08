@@ -6,11 +6,13 @@ type TCustomButton = {
     size?: "sm" | "lg";
     className?: string;
     disabled?: boolean;
+    onClick?: () => void;
 }
 
-const CustomButton = ({variant = "solid", children, size ="sm", className, disabled}: TCustomButton) => {
+const CustomButton = ({variant = "solid", children, size ="sm", className, disabled, onClick}: TCustomButton) => {
   return (
     <button 
+        {...(onClick && {onClick: onClick})}
         disabled={disabled}
         className={twMerge(
             "md:text-lg border-[1.5px] px-14 border-textPurple font-medium transition w-full disabled:opacity-50 disabled:pointer-events-none",

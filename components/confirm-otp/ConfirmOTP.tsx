@@ -2,6 +2,7 @@
 
 import { FormEvent, KeyboardEvent, useRef, useState } from "react"
 import CustomButton from "../CustomButton"
+import { motion } from "motion/react"
 
 const NUMBER_OF_INPUTS = 4
 
@@ -56,7 +57,11 @@ const ConfirmOTP = () => {
     const allInputIsFilled = code.every((digit) => digit !== "");
 
   return (
-    <div className='pt-[5rem] md:pt-[7rem] pb-[5rem] w-full max-w-[30.375rem] mx-auto px-4 md:px-0'>
+    <motion.div
+        initial={{ y: 50, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ ease: "easeInOut", duration: .5 }} 
+        className='pt-[5rem] md:pt-[7rem] pb-[5rem] w-full max-w-[30.375rem] mx-auto px-4 md:px-0'>
         <form onSubmit={handleSubmit} className="pt-20">
             <div className="flex items-center justify-center gap-5">
                 {
@@ -77,7 +82,7 @@ const ConfirmOTP = () => {
             <p className="text-[#686868] text-center my-8">Enter OTP code that was sent to your email, segunsolaru@gmail.com.</p>
             <CustomButton disabled={!allInputIsFilled}>Confirm OTP</CustomButton>
         </form>
-    </div>
+    </motion.div>
   )
 }
 
